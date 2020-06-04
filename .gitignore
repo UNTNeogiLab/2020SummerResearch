@@ -166,3 +166,5 @@ requirements.txt
 !/requirements.txt
 !/main.py
 !/research/
+!/testing.py
+!/qt.py
