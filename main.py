@@ -27,6 +27,9 @@ raw = pd.read_csv(filename, delim_whitespace=True)
 points = []
 current_point = point(0,0)
 used = False
+raw2 = hs.(pd.MultiIndex.from_frame(raw).to_numpy())
+
+'''
 for index,row in raw.iterrows():
     if row["#X"] == current_point.x and row["#Y"] == current_point.y :
         current_point.add(row["#Intensity"],row[ "#Wave"])
@@ -37,3 +40,4 @@ for index,row in raw.iterrows():
 for point in points:
     point.graph()
 
+'''
