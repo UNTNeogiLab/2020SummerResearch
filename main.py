@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import numpy as np
+import hyperspy as hs
 
 class point:
     def __init__(self, x, y):
@@ -17,6 +18,9 @@ class point:
         plt.xlabel("wave")
         plt.title("Point:"+ str(self.x) + ","+ str(self.y))
         plt.show()
+    def convert(self):
+        self.data = hs.signals.Signal1D(np.array(self.intensity))
+
 plt.close("all")
 filename = "data/Sample1_map_data.txt"
 raw = pd.read_csv(filename, delim_whitespace=True)
