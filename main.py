@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import hyperspy as hs
-
+import hyperspy.api as hs
 class point:
     def __init__(self, x, y):
         self.intensity = []
@@ -27,7 +26,7 @@ raw = pd.read_csv(filename, delim_whitespace=True)
 points = []
 current_point = point(0,0)
 used = False
-raw2 = hs.(pd.MultiIndex.from_frame(raw).to_numpy())
+raw2 = hs.signals.Signal1D(pd.MultiIndex.from_frame(raw).to_numpy())
 
 '''
 for index,row in raw.iterrows():
