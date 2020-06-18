@@ -47,9 +47,7 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +63,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="aryan-branch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592456496131</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed README.md and requirements.txt">
+      <created>1592456793401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592456793401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +154,9 @@
     <MESSAGE value="now upgraded to questionably functioning code" />
     <MESSAGE value="graphs are interactive in qt, cleaned up code" />
     <MESSAGE value="removed extra files" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed extra files" />
+    <MESSAGE value="fixed README.md" />
+    <MESSAGE value="fixed README.md and requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed README.md and requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="327" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592260830170">
@@ -170,10 +177,10 @@
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592173071483" />
-    <state x="905" y="261" key="CommitChangelistDialog2" timestamp="1592456492629">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592456789612">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="261" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456492629" />
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456789612" />
     <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592455203954">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -222,11 +229,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592451944792" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2" timestamp="1592456541062">
+    <state x="569" y="296" key="Vcs.Push.Dialog.v2" timestamp="1592456805934">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456541062" />
+    <state x="569" y="296" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456805934" />
     <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592173072762">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
