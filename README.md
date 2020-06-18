@@ -1,8 +1,13 @@
 # 2020SummerResearch
+Requires anaconda and python
 Installation of Required Materials  
-`conda install hyperspy -c conda-forge`  
-`condal install --file requirements.txt`  
+`conda env create -f environment.yml`    
+`conda activate myenv`
 running the program  
- `python main.py`  
-current functionalicty is non-existent
-co
+ `jupter notebook`  
+run all the code cells to get a GUI
+
+
+**Developing this further:**  
+Export a new environment.yml by doing  
+`conda env export > environment.yml`

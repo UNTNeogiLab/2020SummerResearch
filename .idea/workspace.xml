@@ -48,10 +48,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hyperspy_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,7 @@
       <workItem from="1592172937807" duration="9355000" />
       <workItem from="1592241229998" duration="11203000" />
       <workItem from="1592260641014" duration="10567000" />
-      <workItem from="1592424373267" duration="5539000" />
+      <workItem from="1592424373267" duration="8344000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592261991557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="graphs are interactive in qt, cleaned up code">
+      <created>1592452692844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592452692844</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="now upgraded to questionably functioning code" />
-    <option name="LAST_COMMIT_MESSAGE" value="now upgraded to questionably functioning code" />
+    <MESSAGE value="graphs are interactive in qt, cleaned up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="graphs are interactive in qt, cleaned up code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="327" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592260830170">
@@ -160,23 +168,23 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592243897916" />
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592173601471">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592452670065">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592173601471" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592452670065" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog" timestamp="1592173071483">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592173071483" />
-    <state x="905" y="261" key="CommitChangelistDialog2" timestamp="1592261987849">
+    <state x="905" y="261" key="CommitChangelistDialog2" timestamp="1592452688138">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="261" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592261987849" />
-    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592173014749">
+    <state x="905" y="261" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592452688138" />
+    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592455203954">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592173014749" />
+    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592455203954" />
     <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592451798568">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -217,11 +225,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592451944792" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2" timestamp="1592262028259">
+    <state x="569" y="296" key="Vcs.Push.Dialog.v2" timestamp="1592452703312">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592262028259" />
+    <state x="569" y="296" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592452703312" />
     <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592173072762">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
