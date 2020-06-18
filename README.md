@@ -4,7 +4,8 @@ Installation of Required Materials
 `conda env create -f environment.yml`    
 `conda activate myenv`  
 running the program  
- `jupyter notebook`  
+ `jupyter notebook`  or
+ `jupyter lab`  
 run all the code cells to get a GUI
 
 

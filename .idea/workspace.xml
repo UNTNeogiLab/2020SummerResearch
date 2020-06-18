@@ -47,7 +47,12 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="" />
+    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +73,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="2ce7ce74-3f5b-4f7d-939f-bd4a4371d65a" />
+  <component name="JupyterTrust" id="2ce7ce74-3f5b-4f7d-939f-bd4a4371d65a">
+    <option name="files">
+      <option value="hyperspy.ipynb" />
+    </option>
+  </component>
   <component name="ProjectId" id="1dJwEhP5GB00BreFpltJgSyhOjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,6 +87,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
@@ -85,8 +95,9 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
   </component>
+  <component name="RunManager" selected="Python.main" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,6 +114,7 @@
       <workItem from="1592241229998" duration="11203000" />
       <workItem from="1592260641014" duration="10567000" />
       <workItem from="1592424373267" duration="8344000" />
+      <workItem from="1592504724612" duration="4061000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -132,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592456793401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed README.md and environment.yml">
+      <created>1592457409790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592457409790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +175,8 @@
     <MESSAGE value="removed extra files" />
     <MESSAGE value="fixed README.md" />
     <MESSAGE value="fixed README.md and requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed README.md and requirements.txt" />
+    <MESSAGE value="fixed README.md and environment.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed README.md and environment.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="327" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592260830170">
@@ -177,14 +197,14 @@
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592173071483" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592456789612">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592457406165">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456789612" />
-    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592455203954">
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592457406165" />
+    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592511684002">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592455203954" />
+    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592511684002" />
     <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592451798568">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -225,15 +245,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456365468" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1592451944792">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1592512305400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592451944792" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2" timestamp="1592456805934">
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592512305400" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592457432753">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592456805934" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592457432753" />
     <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592173072762">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
