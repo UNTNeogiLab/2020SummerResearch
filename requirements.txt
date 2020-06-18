@@ -1,3 +1,6 @@
 pandas
 matplotlib
-PySide2
+hyperspy
+numpy
+juypter
+juypter-lab
