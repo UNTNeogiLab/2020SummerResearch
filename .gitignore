@@ -166,7 +166,5 @@ requirements.txt
 !/requirements.txt
 !/main.py
 !/research/
-!/data/Sample1_map_data.txt
-.idea/datalore.xml
-Glade-GUI.glade
-!/main.py
+!/testing.py
+!/qt.py
