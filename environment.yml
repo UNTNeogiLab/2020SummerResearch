@@ -179,5 +179,6 @@ dependencies:
     - pyqt5-sip==12.8.0
     - pyqtchart==5.12
     - pyqtwebengine==5.12.1
+    - renishawwire==0.1.7
 prefix: C:\Users\aa1625\Anaconda3\envs\python
 
