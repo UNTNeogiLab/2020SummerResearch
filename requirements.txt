@@ -1,2 +1,6 @@
 pandas
 matplotlib
+hyperspy
+numpy
+juypter
+juypter-lab
