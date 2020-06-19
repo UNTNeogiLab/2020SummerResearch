@@ -4,3 +4,5 @@ hyperspy
 numpy
 juypter
 juypter-lab
+hyperspyui
+qt

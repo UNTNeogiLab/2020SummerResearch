@@ -17,9 +17,9 @@ def read(filename):
         return hs.signals.Signal1D(raw)
     if (extension in loadables["extension"]):
         if(loadables["extension" == extension]["signal"] == ""):
-            return hs.load(filename)
+            return hs.load(filename, signal_type=loadables["extension" == extension]["signal"])
         else:
-            return hs.load()
+            return hs.load(filename)
     if (extension == "wdf"):
         reader = WDFReader(filename)
         reader.print_info()
