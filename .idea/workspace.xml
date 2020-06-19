@@ -48,6 +48,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/import_config.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/importer.py" afterDir="false" />
@@ -90,15 +91,22 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wdf.py" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aa1625\PycharmProjects\research" />
+      <recent name="C:\Users\aa1625\PycharmProjects\research\.pytest_cache\config" />
+      <recent name="C:\Users\aa1625\PycharmProjects\research\data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aa1625\PycharmProjects\research\config" />
       <recent name="C:\Users\aa1625\PycharmProjects\research\data" />
     </key>
   </component>
@@ -124,7 +132,9 @@
       <workItem from="1592241229998" duration="11203000" />
       <workItem from="1592260641014" duration="10567000" />
       <workItem from="1592424373267" duration="8344000" />
-      <workItem from="1592504724612" duration="7880000" />
+      <workItem from="1592504724612" duration="10580000" />
+      <workItem from="1592529022240" duration="2500000" />
+      <workItem from="1592534258717" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -182,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592516449948</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="(broken) spc/spd importing">
+      <created>1592517305280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592517305280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +227,8 @@
     <MESSAGE value="further environment.yml tweaks" />
     <MESSAGE value="added file selection and more data" />
     <MESSAGE value="seperated gui input" />
-    <option name="LAST_COMMIT_MESSAGE" value="seperated gui input" />
+    <MESSAGE value="(broken) spc/spd importing" />
+    <option name="LAST_COMMIT_MESSAGE" value="(broken) spc/spd importing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1119" y="609" key="#VCS_History_Cache_Settings" timestamp="1592512748451">
@@ -222,10 +240,10 @@
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157637743" />
     <state x="327" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592513713155" />
-    <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592243897916">
+    <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592517186495">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592243897916" />
+    <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592517186495" />
     <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1592512325746">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -234,23 +252,27 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456465652" />
-    <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog" timestamp="1592173071483">
+    <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog" timestamp="1592517274690">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
-    <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592173071483" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592516449270">
+    <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592517274690" />
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592517304815">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592516449270" />
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592517304815" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592516018643">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592516018643" />
-    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592513698173">
+    <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592534351396">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592513698173" />
+    <state x="653" y="274" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1592534351396" />
+    <state x="1010" y="621" width="669" height="158" key="GitCloneDialog" timestamp="1592518937262">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="621" width="669" height="158" key="GitCloneDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592518937262" />
     <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592515554859">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -291,32 +313,48 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456365468" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1592512305400">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1592534309063">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592512305400" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592515584784">
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592534309063" />
+    <state x="1001" y="441" width="540" height="524" key="StructurePopup" timestamp="1592533663041">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1001" y="441" width="540" height="524" key="StructurePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533663041" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592517311570">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592515584784" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592517311570" />
+    <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592534332624">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592534332624" />
+    <state x="884" y="339" key="com.intellij.database.run.actions.ShowCsvFormatsAction$ForExport" timestamp="1592533185070">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="884" y="339" key="com.intellij.database.run.actions.ShowCsvFormatsAction$ForExport/0.0.2560.1400@0.0.2560.1400" timestamp="1592533185070" />
     <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592516100969">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592516100969" />
-    <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592173072762">
+    <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592517275865">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="614" y="192" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1440.900@0.0.1440.900" timestamp="1592157607875" />
-    <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.2560.1400@0.0.2560.1400" timestamp="1592173072762" />
+    <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.2560.1400@0.0.2560.1400" timestamp="1592517275865" />
+    <state x="860" y="355" key="editAsTableFormatDialogDimension" timestamp="1592534429420">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="860" y="355" key="editAsTableFormatDialogDimension/0.0.2560.1400@0.0.2560.1400" timestamp="1592534429420" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1592156557202">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1592156557202" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1592512771304">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1592533178780">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592512771304" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533178780" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,7 +369,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/2020SummerResearch$main_py.coverage" NAME="main.py Coverage Results" MODIFIED="1592172308880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/research$wdf.coverage" NAME="wdf Coverage Results" MODIFIED="1592513805263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/research$wdf.coverage" NAME="wdf Coverage Results" MODIFIED="1592588607346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/research$main_py.coverage" NAME="main.py Coverage Results" MODIFIED="1592428009291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
