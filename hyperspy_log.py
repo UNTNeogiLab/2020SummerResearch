@@ -655,3 +655,444 @@ data.plot()
 
 data = read(gui_fname())
 
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui(toolkit="ipywidgets")
+print("Imported Packages")
+
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui(toolkit="ipywidgets")
+print("Imported Packages")
+data = read(gui_fname())
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+print("Imported Packages")
+data = read(gui_fname())
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+get_ipython().run_line_magic('matplotlib', 'notebook')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+print("Imported Packages")
+data = read(gui_fname())
+data = read(gui_fname())
+data = read(gui_fname())
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences()
+print("Imported Packages")
+
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.transpose()
+data.plot()
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+data.transpose()
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.transpose()
+data.plot(navigator= "slider")
+
+data2 =  data.roi.SpanROI(200,400)
+
+band =  hs.roi.SpanROI(200,400)
+data2 = band(data)
+data2.plot()
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+band =  hs.roi.SpanROI(200,400)
+data2 = band(data)
+data2.plot()
+band =  hs.roi.SpanROI()
+data2 = band(data)
+data2.plot()
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+#print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate(data.find_peaks1D_ohaver()[0:1])
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.calibrate()
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.transpose()
+for image in data:
+    image.plot()
+
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data = read(gui_fname())
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.plot()
+
+data.axes_manager.gui()
+data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+data.plot()
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+data = read(gui_fname())
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+data.plot()
+
+data.plot()
+
+data = read(gui_fname())
+
+data.plot()
+
+data = read(gui_fname())
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+data = read(gui_fname())
+
+data = read(gui_fname())
+
+data = read(gui_fname())
+
+data = read(gui_fname())
+
+data.plot()
+
+data = read(gui_fname())
+
+get_ipython().run_line_magic('gui', 'qt')
+get_ipython().run_line_magic('matplotlib', 'qt')
+from func import *
+from importer import *
+import matplotlib.pyplot as plt
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+
+
+data = read(gui_fname())
+
+data = read(gui_fname())
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+

@@ -20,7 +20,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -47,13 +46,15 @@
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="(basic) wdf importing">
-      <change afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+    <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/MoS2_Map1_Copy.spc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/RamanSpec.spc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyperspy_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/importer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renishawWiRE/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renishawWiRE/types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renishawWiRE/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/renishawWiRE/wdfReader.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +77,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="2ce7ce74-3f5b-4f7d-939f-bd4a4371d65a">
-    <option name="files">
-      <option value="wdf.ipynb" />
-    </option>
-  </component>
+  <component name="JupyterTrust" id="2ce7ce74-3f5b-4f7d-939f-bd4a4371d65a" />
   <component name="ProjectId" id="1dJwEhP5GB00BreFpltJgSyhOjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -163,7 +160,8 @@
       <workItem from="1592534258717" duration="1557000" />
       <workItem from="1592588494316" duration="5148000" />
       <workItem from="1592600828674" duration="2904000" />
-      <workItem from="1592605050838" duration="347000" />
+      <workItem from="1592605050838" duration="10036000" />
+      <workItem from="1592679673859" duration="2675000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -242,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592602951584</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added png support, dropped bad spc files">
+      <created>1592605698409</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592605698409</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +278,8 @@
     <MESSAGE value="(broken) spc/spd importing" />
     <MESSAGE value="(basic) wdf importing" />
     <MESSAGE value="updated importer.py, environment.yml, credits.txt and requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated importer.py, environment.yml, credits.txt and requirements.txt" />
+    <MESSAGE value="added png support, dropped bad spc files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added png support, dropped bad spc files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1119" y="609" key="#VCS_History_Cache_Settings" timestamp="1592512748451">
@@ -293,23 +299,23 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592512325746" />
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592456465652">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592605657898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456465652" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592605657898" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog" timestamp="1592517274690">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592517274690" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592605299869">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592605697844">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592605299869" />
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592605291893">
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592605697844" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592605975932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592605291893" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592605975932" />
     <state x="653" y="274" key="FileChooserDialogImpl" timestamp="1592591989798">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -318,26 +324,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="621" width="669" height="158" key="GitCloneDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592518937262" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592592206563">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1592682031372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592172323332" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592592206563" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1592592206563">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592682031372" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1592682031372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592172323331" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592592206563" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1592592206563">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592682031372" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1592682031372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592172323329" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592592206563" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1592592206563">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592682031372" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1592682031372">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592172323332" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592592206563" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592682031372" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1592592002308">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -366,11 +372,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1001" y="441" width="540" height="524" key="StructurePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533663041" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592588792391">
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592605713213">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592588792391" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592605713213" />
     <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592534332624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -403,13 +409,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wdf.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

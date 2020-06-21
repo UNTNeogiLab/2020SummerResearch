@@ -11,5 +11,5 @@ run all the code cells to get a GUI
 
 **Developing this further:**  
 Export a new environment.yml by doing  
-`conda env export > environment.yml`
+`conda env export --no-build > environment.yml`
 
