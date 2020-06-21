@@ -1,7 +1,8 @@
 # 2020SummerResearch 
 Requires anaconda and python
 Installation of Required Materials  
-`conda env create -f config/environment.yml`    
+`conda env create -f config/environment.yml`
+`jupyter lab workspaces import config/lab.json`    
 `conda activate myenv`  
 running the program  
 `jupyter lab`  

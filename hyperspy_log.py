@@ -1333,3 +1333,88 @@ print("Imported Packages")
 data.plot()
 data.plot()
 data.plot()
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+get_ipython().run_line_magic('ls', '')
+get_ipython().run_line_magic('ls', '/config')
+get_ipython().run_line_magic('ls', './config')
+get_ipython().system('ls ./config')
+get_ipython().system('dir ./config')
+get_ipython().system('dir .\\config')
+data = read(gui_fname().decode("utf-8"))
+data.plot()
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+data[3].plot()
+data.plot()
+data[isig].plot()
+data.isig[3].plot()
+def f(x):
+    return x
+interact(f, x=10);
+data.isig[x].plot()
+def f(x):
+    return x
+interact(f, x=10);
+data.isig[x].plot()
+data.isig[x.result].plot()
+def f(x):
+    return x
+w= widgets.interactive(f, x=10);
+x
+data.isig[x].plot()
+w
+data.isig[x].plot()
+w
+data.isig[w].plot()
+w
+data.isig[w.result].plot()
+w
+data.isig[w.result]
+w
+data2 = data.isig[w.result]
+data2.plot()
+def f(x):
+    return x
+data2 = data.isig[w.
+interact(f, x=10)]
+data2 = data.isig[
+interact(f, x=10)]
+data2 = data.isig[int(interact(f, x=10))]
+def f(x):
+    return x
+w = widgets.IntSlider()
+display(w)
+data2 = data.isig[int(w.output)].plot()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+def f(x):
+    return x
+w = widgets.interactive(f,a=10)
+def f(x):
+    return x
+w = widgets.interactive(f,x=10)
+display(w)
+data2 = data.isig[int(w.result)].plot()
+def f(x):
+    return x
+w = widgets.interactive(f,x=(0,1023))
+display(w)
+data2 = data.isig[int(w.result)].plot()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.result)].plot()
+data = read(gui_fname().decode("utf-8"))
+display(w)
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.result)].plot()
