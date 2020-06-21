@@ -48,13 +48,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/func.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyperspy_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/importer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renishawWiRE/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renishawWiRE/types.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renishawWiRE/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/renishawWiRE/wdfReader.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +160,7 @@
       <workItem from="1592600828674" duration="2904000" />
       <workItem from="1592605050838" duration="10036000" />
       <workItem from="1592679673859" duration="2675000" />
+      <workItem from="1592773855001" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -247,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592605698409</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added sorting for txts (broken)&#10;updated environment.yml">
+      <created>1592774037176</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592774037176</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +285,8 @@
     <MESSAGE value="(basic) wdf importing" />
     <MESSAGE value="updated importer.py, environment.yml, credits.txt and requirements.txt" />
     <MESSAGE value="added png support, dropped bad spc files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added png support, dropped bad spc files" />
+    <MESSAGE value="added sorting for txts (broken)&#10;updated environment.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sorting for txts (broken)&#10;updated environment.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1119" y="609" key="#VCS_History_Cache_Settings" timestamp="1592512748451">
@@ -295,10 +302,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1002" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592517186495" />
-    <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1592512325746">
+    <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1592776807806">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592512325746" />
+    <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592776807806" />
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592605657898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -308,10 +315,10 @@
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592517274690" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592605697844">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592774036772">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592605697844" />
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592774036772" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592605975932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -372,11 +379,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1001" y="441" width="540" height="524" key="StructurePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533663041" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592605713213">
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592774043537">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592605713213" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592774043537" />
     <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592534332624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -385,10 +392,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="884" y="339" key="com.intellij.database.run.actions.ShowCsvFormatsAction$ForExport/0.0.2560.1400@0.0.2560.1400" timestamp="1592533185070" />
-    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592516100969">
+    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592773998195">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592516100969" />
+    <state x="1089" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592773998195" />
     <state x="1092" y="299" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1592517275865">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

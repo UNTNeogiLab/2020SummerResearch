@@ -8,9 +8,8 @@ import os
 
 
 def read(filename):
-    loadables = pd.read_csv("config/import_config.csv")
+    loadables = pd.read_csv("../config/import_config.csv")
     extension = filename.split('.', 1)[1]
-    print(extension)
     if (extension == "jpg"):
         im = Image.open(filename)
         im.save("temp.png")
@@ -18,14 +17,13 @@ def read(filename):
         os.remove("temp.png")
         return data
     if (extension == "txt"):
-        raw = np.genfromtxt(filename, delimiter="\t", skip_header=1, dtype=float, names =("X","Y","Wavelength","Intensity") )
+        raw = np.genfromtxt(filename, delimiter="\t", skip_header=1, dtype=float, names =("X","Y","Wavelength","Intensity"))
+        raw["X"] *= -1
         xCoords = np.unique(raw["X"]).__len__()
-        yCoords = np.unique(raw[["Y"]]).__len__()
+        yCoords = np.unique(raw["Y"]).__len__()
         wavesize = int(np.shape(raw)[0]/xCoords/yCoords)
-        print(raw)
-        raw = np.sort(raw, axis=-1, order = ("X","Y","Wavelength"))
-        raw = (raw["Intensity"].reshape((xCoords, yCoords, wavesize)))  
-        print(raw)
+        raw = np.sort(raw, axis=-1, order = ("Y","X","Wavelength"))
+        raw = (raw["Intensity"].reshape((xCoords, yCoords, wavesize)))
         return hs.signals.Signal1D(raw)
     if (extension in loadables["extension"]):
         if (loadables["extension" == extension]["signal"] == ""):

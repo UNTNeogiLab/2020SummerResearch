@@ -1,10 +1,9 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 # ============================
-# 2020-06-18 
-# 00:15 
+# 2020-06-18
+# 00:15
 # ============================
 get_ipython().run_line_magic('matplotlib', 'qt')
-import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import hyperspy.api as hs
@@ -49,16 +48,12 @@ data.axes_manager.gui()
 data.axes_manager.gui_navigation_sliders()
 data.plot()
 get_ipython().run_line_magic('matplotlib', 'qt')
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
 
 
 get_ipython().run_line_magic('matplotlib', 'qt')
-import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import hyperspy.api as hs
@@ -89,7 +84,6 @@ data.plot()
 gui_fname()
 get_ipython().run_line_magic('gui', 'qt')
 
-from PyQt5.QtWidgets import QFileDialog
 
 def gui_fname(dir=None):
     """Select a file via a dialog and return the file name."""
@@ -100,9 +94,7 @@ def gui_fname(dir=None):
 gui_fname()
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from PyQt5.QtWidgets import QFileDialog
-from func import *
-import pandas as pd
+from utils.func import *
 import matplotlib.pyplot as plt
 import numpy as np
 import hyperspy.api as hs
@@ -126,9 +118,7 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from PyQt5.QtWidgets import QFileDialog
-from func import *
-import pandas as pd
+from utils.func import *
 import matplotlib.pyplot as plt
 import numpy as np
 import hyperspy.api as hs
@@ -152,19 +142,12 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from PyQt5.QtWidgets import QFileDialog
-from func import *
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from PyQt5.QtWidgets import QFileDialog
-from func import *
-import pandas as pd
+from utils.func import *
 import matplotlib.pyplot as plt
 import numpy as np
 import hyperspy.api as hs
@@ -188,8 +171,6 @@ raw = (raw[:,[2]].reshape((xCoords,yCoords,wavesize)))
 print("Imported Data")
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
 import matplotlib.pyplot as plt
 import hyperspy.api as hs
 plt.close(all)
@@ -199,8 +180,6 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
 import matplotlib.pyplot as plt
 import hyperspy.api as hs
 plt.close(all)
@@ -210,9 +189,8 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -228,9 +206,8 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -240,9 +217,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -252,9 +228,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -264,9 +239,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -276,9 +250,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -308,9 +281,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -336,9 +308,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -468,9 +439,6 @@ print(data.find_peaks1D_ohaver())
 data.plot()
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'webagg')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -478,9 +446,6 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'webagg')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -488,9 +453,6 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'WebAgg')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -498,9 +460,6 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'WX')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -508,9 +467,8 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'WX')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -580,9 +538,8 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -601,9 +558,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -615,9 +571,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -638,9 +593,8 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -657,9 +611,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
@@ -684,18 +637,16 @@ data.calibrate()
 #print(data.find_peaks1D_ohaver())
 data.plot()
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui(toolkit="ipywidgets")
 print("Imported Packages")
 data = read(gui_fname())
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
-import hyperspy.api as hs
+from utils.func import *
+from utils.importer import *
+
 print("Imported Packages")
 data = read(gui_fname())
 data.axes_manager.gui()
@@ -709,10 +660,9 @@ data.calibrate()
 #print(data.find_peaks1D_ohaver())
 data.plot()
 get_ipython().run_line_magic('matplotlib', 'notebook')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
-import hyperspy.api as hs
+from utils.func import *
+from utils.importer import *
+
 print("Imported Packages")
 data = read(gui_fname())
 data = read(gui_fname())
@@ -724,9 +674,6 @@ data.calibrate()
 data.plot()
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
 import hyperspy.api as hs
 hs.preferences()
 print("Imported Packages")
@@ -734,9 +681,8 @@ print("Imported Packages")
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences
 print("Imported Packages")
@@ -746,9 +692,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui()
 print("Imported Packages")
@@ -767,9 +712,8 @@ data.plot()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui()
 print("Imported Packages")
@@ -1020,9 +964,8 @@ data.calibrate()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui()
 print("Imported Packages")
@@ -1054,9 +997,8 @@ data.calibrate()
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui()
 print("Imported Packages")
@@ -1078,9 +1020,8 @@ data = read(gui_fname())
 
 get_ipython().run_line_magic('gui', 'qt')
 get_ipython().run_line_magic('matplotlib', 'qt')
-from func import *
-from importer import *
-import matplotlib.pyplot as plt
+from utils.func import *
+from utils.importer import *
 import hyperspy.api as hs
 hs.preferences.gui()
 print("Imported Packages")
@@ -1096,3 +1037,299 @@ data = read(gui_fname())
 #print(data.find_peaks1D_ohaver())
 data.calibrate()
 
+data = read(gui_fname())
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+data = read(gui_fname())
+get_ipython().run_line_magic('matplotlib', 'qt')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname())
+get_ipython().run_line_magic('matplotlib', 'notebook')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'notebook')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'notebook')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname())
+data = read(gui_fname())
+my_button = SelectFilesButton()
+my_button
+data = read()
+my_button = SelectFilesButton()
+my_button
+data = read()
+get_ipython().run_line_magic('matplotlib', 'notebook')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+my_button = SelectFilesButton()
+my_button
+data = read()
+my_button = SelectFilesButton()
+my_button
+data = read(my_button.file)
+my_button = SelectFilesButton()
+my_button
+data = read(my_button.out)
+my_button = SelectFilesButton()
+my_button
+data = read(my_button.files)
+my_button = SelectFilesButton()
+my_button
+data = read(out)
+data = read(gui_fname())
+data = read(gui_fname().encode())
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+get_ipython().run_line_magic('matplotlib', 'notebook')
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'notebook')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+#hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+data = hs.load("data/RamanSpec.spc",signal_type="EDSSEMSpectrum")
+get_ipython().run_line_magic('matplotlib', 'notebook')
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+#hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+#hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+#hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.GUIs.enable_traitsui_gui = False
+hs.preferences.GUIs.enable_ipython_gui = True
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+out = widgets.Output(data.plot())
+get_ipython().run_line_magic('matplotlib', 'widget')
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+out = widgets.Output(data.plot())
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+import hyperspy.api as hs
+out= widgets.Output(hs.preferences.gui())
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+import hyperspy.api as hs
+out = widgets.Output(hs.preferences.gui()[0])
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+import hyperspy.api as hs
+out = widgets.Output(hs.preferences.gui()[1])
+print("Imported Packages")
+get_ipython().run_line_magic('matplotlib', 'widget')
+import ipywidgets as widgets
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+out = widgets.Output(data.plot())
+data.plot()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+data = read(gui_fname().decode("utf-8"))
+data.plot()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data = read(gui_fname().decode("utf-8"))
+get_ipython().run_line_magic('matplotlib', 'widget')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+data.plot()
+get_ipython().run_line_magic('matplotlib', 'widget')
+from utils.func import *
+from utils.importer import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data = read(gui_fname().decode("utf-8"))
+data.plot()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data.plot()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data = read(gui_fname().decode("utf-8"))
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+data = read(gui_fname().decode("utf-8"))
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+get_ipython().run_line_magic('matplotlib', 'widget')
+from utils.func import *
+import hyperspy.api as hs
+hs.preferences.gui()
+print("Imported Packages")
+data.plot()
+data.plot()
+data.plot()

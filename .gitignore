@@ -163,8 +163,7 @@ requirements.txt
 !/main.py
 !/data
 !/requirements.txt
-!/requirements.txt
-!/main.py
+/hyperspy_log.pyp
 !/research/
 !/testing.py
 !/qt.py
@@ -187,3 +186,5 @@ requirements.txt
 !/data/Sample3_map_data.txt
 !/data/Sample3_PL_tri.txt
 !/data/Sample2_PL_bilayer.txt
+!/hyperspy_log.py
+!/hyperspy_log.py
