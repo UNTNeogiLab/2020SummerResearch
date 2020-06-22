@@ -47,9 +47,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2020SummerResearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2020SummerResearch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/import_config.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/importer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="2ce7ce74-3f5b-4f7d-939f-bd4a4371d65a" />
+  <component name="JupyterTrust" id="a0c167c0-6e4f-43be-98fc-a1a4f955be8f" />
   <component name="ProjectId" id="1dJwEhP5GB00BreFpltJgSyhOjx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -91,7 +95,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -160,6 +164,7 @@
       <workItem from="1592605050838" duration="10036000" />
       <workItem from="1592679673859" duration="2675000" />
       <workItem from="1592773855001" duration="7192000" />
+      <workItem from="1592793156964" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -389,9 +394,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456365468" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1592782442918">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="439" y="178" key="SettingsEditor" timestamp="1592794184623">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="439" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1592794184623" />
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592782442918" />
     <state x="1001" y="441" width="540" height="524" key="StructurePopup" timestamp="1592533663041">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -444,9 +450,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/2020SummerResearch$main_py.coverage" NAME="main.py Coverage Results" MODIFIED="1592172308880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/research$wdf.coverage" NAME="wdf Coverage Results" MODIFIED="1592588607346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/research$main_py.coverage" NAME="main.py Coverage Results" MODIFIED="1592428009291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/2020SummerResearch$main_py.coverage" NAME="main.py Coverage Results" MODIFIED="1592172308880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/research$gui.coverage" NAME="gui Coverage Results" MODIFIED="1592592110587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
