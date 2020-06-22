@@ -47,11 +47,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hyperspy_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/importer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,13 +91,13 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aa1625\PycharmProjects\research\config" />
       <recent name="C:\Users\aa1625\PycharmProjects\research\utils" />
       <recent name="C:\Users\aa1625\PycharmProjects\research" />
-      <recent name="C:\Users\aa1625\PycharmProjects\research\config" />
       <recent name="C:\Users\aa1625\PycharmProjects\research\.pytest_cache\config" />
       <recent name="C:\Users\aa1625\PycharmProjects\research\data" />
     </key>
@@ -161,7 +159,7 @@
       <workItem from="1592600828674" duration="2904000" />
       <workItem from="1592605050838" duration="10036000" />
       <workItem from="1592679673859" duration="2675000" />
-      <workItem from="1592773855001" duration="4828000" />
+      <workItem from="1592773855001" duration="7192000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -261,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592780086510</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed importer.py, added rudimentary layer selection">
+      <created>1592781951822</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592781951822</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +299,8 @@
     <MESSAGE value="updated importer.py, environment.yml, credits.txt and requirements.txt" />
     <MESSAGE value="added png support, dropped bad spc files" />
     <MESSAGE value="fixed flipping&#10;added lab.json&#10;cleaned up repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed flipping&#10;added lab.json&#10;cleaned up repo" />
+    <MESSAGE value="fixed importer.py, added rudimentary layer selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed importer.py, added rudimentary layer selection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1119" y="609" key="#VCS_History_Cache_Settings" timestamp="1592512748451">
@@ -323,10 +329,10 @@
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592517274690" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592780086122">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592781951505">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592780086122" />
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592781951505" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592605975932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -383,19 +389,19 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="918" y="461" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592456365468" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1592534309063">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1592782442918">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592534309063" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592782442918" />
     <state x="1001" y="441" width="540" height="524" key="StructurePopup" timestamp="1592533663041">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1001" y="441" width="540" height="524" key="StructurePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533663041" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592780127964">
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592781988821">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592780127964" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592781988821" />
     <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592534332624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

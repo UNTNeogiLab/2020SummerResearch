@@ -159,10 +159,10 @@ data/Sample3_PL_tri.txt
 data/Sample3_map_data.txt
 data/Sample3_map_data.wdf
 main.py
-requirements.txt
+config/requirements.txt
 !/main.py
 !/data
-!/requirements.txt
+!/config/requirements.txt
 /hyperspy_log.pyp
 !/research/
 !/testing.py
