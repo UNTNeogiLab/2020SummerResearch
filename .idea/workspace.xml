@@ -48,7 +48,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cba3bfad-937e-45c3-a7ac-494abbc04ad8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/hyperspy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/hyperspy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/importer.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/importer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyperspy_log.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,7 @@
       <workItem from="1592773855001" duration="7192000" />
       <workItem from="1592793156964" duration="3140000" />
       <workItem from="1592797563214" duration="1121000" />
-      <workItem from="1592841498114" duration="2076000" />
+      <workItem from="1592841498114" duration="2541000" />
     </task>
     <task id="LOCAL-00001" summary="now upgraded to questionably functioning code">
       <created>1592261991557</created>
@@ -282,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592849000485</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cleaned up hyperspy.ipynb for demo purposes">
+      <created>1592849989638</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592849989639</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +325,8 @@
     <MESSAGE value="fixed importer.py, added rudimentary layer selection" />
     <MESSAGE value="updated README.md" />
     <MESSAGE value="updated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
+    <MESSAGE value="cleaned up hyperspy.ipynb for demo purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up hyperspy.ipynb for demo purposes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1119" y="609" key="#VCS_History_Cache_Settings" timestamp="1592512748451">
@@ -338,19 +346,19 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1099" y="391" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592776807806" />
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592780138302">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592850214952">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592780138302" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592850214952" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog" timestamp="1592517274690">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="485" y="287" key="#com.intellij.tools.ToolEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1592157606846" />
     <state x="862" y="446" key="#com.intellij.tools.ToolEditorDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592517274690" />
-    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592849000134">
+    <state x="1334" y="66" key="CommitChangelistDialog2" timestamp="1592849989301">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592849000134" />
+    <state x="1334" y="66" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592849989301" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1592605975932">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -416,11 +424,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1001" y="441" width="540" height="524" key="StructurePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1592533663041" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592781988821">
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2" timestamp="1592849994769">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592158356654" />
-    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592781988821" />
+    <state x="569" y="296" width="816" height="512" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592849994769" />
     <state x="1010" y="505" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1592534332624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
