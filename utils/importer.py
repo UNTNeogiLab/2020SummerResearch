@@ -18,7 +18,7 @@ def read(filename):
         return data
     if (extension == "txt"):
         raw = np.genfromtxt(filename, delimiter="\t", skip_header=1, dtype=float, names =("X","Y","Wavelength","Intensity"))
-        raw["X"] *= -1
+        #raw["X"] *= -1
         xCoords = np.unique(raw["X"]).__len__()
         yCoords = np.unique(raw["Y"]).__len__()
         wavesize = int(np.shape(raw)[0]/xCoords/yCoords)
