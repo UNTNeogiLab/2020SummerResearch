@@ -9,3 +9,6 @@ qt
 ipywidgets
 nodejs
 ipympl
+ipykernel
+renishawWiRE
+PyQt5
