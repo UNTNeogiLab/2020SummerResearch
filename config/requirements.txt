@@ -6,5 +6,6 @@ juypter
 juypter-lab
 hyperspyui
 qt
-ipympl
+ipywidgets
 nodejs
+ipympl
