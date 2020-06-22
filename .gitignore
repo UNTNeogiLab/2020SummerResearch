@@ -145,6 +145,7 @@ cython_debug/
 .idea/misc.xml
 .idea/modules.xml
 .idea/research.iml
+.idea/workspace.xml
 data/Sample1_PL_bilayer.txt
 data/Sample1_PL_mono.txt
 data/Sample1_map_data.txt
@@ -163,7 +164,6 @@ config/requirements.txt
 !/main.py
 !/data
 !/config/requirements.txt
-/hyperspy_log.pyp
 !/research/
 !/testing.py
 !/qt.py
@@ -186,5 +186,4 @@ config/requirements.txt
 !/data/Sample3_map_data.txt
 !/data/Sample3_PL_tri.txt
 !/data/Sample2_PL_bilayer.txt
-!/hyperspy_log.py
-!/hyperspy_log.py
+hyperspy_log.py
