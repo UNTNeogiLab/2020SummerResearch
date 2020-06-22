@@ -1418,3 +1418,202 @@ display(w)
 data2 = data.isig[int(w.result)].plot()
 data2 = data.isig[int(w.result)].plot()
 data2 = data.isig[int(w.result)].plot()
+def f(x):
+    return x
+w = widgets.interactive(f,x=(0,1023))
+
+data = read(gui_fname().decode("utf-8"))
+
+#data.axes_manager.gui()
+#data.axes_manager.gui_navigation_sliders()
+#data.crop_signal1D(200,400)
+#print(data.find_peaks1D_ohaver())
+data.calibrate()
+
+
+display(w)
+
+data2 = data.isig[int(w.result)].plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+band =  hs.roi.SpanROI(1,2)
+data2 = band(data)
+data2.plot()
+
+def f(x):
+    return x
+w = widgets.interactive(f,x=(0,1023))
+data = read(gui_fname().decode("utf-8"))
+display(w)
+w = widgets.IntSlider()
+display(w)
+data2 = data.isig[int(w.result)].plot()
+data2 = data.isig[int(w.value)].plot()
+data2 = data.isig[int(w.value)].plot()
+data2 = data.isig[int(w.value)].plot()
+display(w)
+w.value
+display(w)
+w.value
+data2 = data.isig[int(w.value)].plot()
+data2 = data.isig[int(w.value)].plot()
+data2 = data.isig[int(w.value)].plot()
+def on_change(change):
+    if change['name'] == 'value' and (change['new'] != change['old']):
+        clear_output()
+        data.isig[int(w.value)].plot()
+        sns.boxplot(data = mydata[change['new']])
+display(w)
+w.value
+def on_change(change):
+    if change['name'] == 'value' and (change['new'] != change['old']):
+        clear_output()
+        data.isig[int(w.value)].plot()
+        sns.boxplot(data = mydata[change['new']])
+display(w)
+w.observe(on_change)
+def on_change(change):
+    if change['name'] == 'value' and (change['new'] != change['old']):
+        clear_output()
+        data.isig[int(w.value)].plot()
+display(w)
+w.observe(on_change)
+def on_change(change):
+    with output:
+        data.isig[int(w.value)].plot()
+display(w)
+w.observe(on_change)
+data.isig[int(w.value)].plot()
+def on_change(change):
+    with output:
+        data.isig[int(w.value)].plot()
+display(w)
+w.observe(on_change, names = 'value')
+with output:
+        data.isig[int(w.value)].plot()
+def on_change(change):
+    with output:
+        data.isig[int(w.value)].plot()
+display(w)
+w.observe(on_change, names = 'value')
+def on_change(change):
+    print ( "Hi")
+    with output:
+        data.isig[int(w.value)].plot()
+display(w)
+w.observe(on_change, names = 'value')
+output = widgets.output()
+def on_change(change):
+    print ( "Hi")
+    with output:
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w)
+output = widgets.Output()
+def on_change(change):
+    print ( "Hi")
+    with output:
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w)
+output = widgets.Output()
+def on_change(change):
+    
+    with output:
+        print ( "Hi")
+
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w)
+output = widgets.Output()
+def on_change(change):
+    with output:
+        print ( "Hi")
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w, output)
+output = widgets.Output()
+def on_change(change):
+    with output:
+        print ( "Hi")
+        plt.close("all")
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w, output)
+output = widgets.Output()
+def on_change(change):
+    with output:
+        print ( "Hi")
+        plt.close('all')
+        data.isig[int(w.value)].plot()
+
+w.observe(on_change, names = 'value')
+display(w, output)
+data.isig[int(w.value)].plot()
+plt.close('all')
+data.isig[int(w.value)].plot()
+plt.close('all')
+plt.close('all')
+data.isig[int(w.value)].plot()
+plt.close('all')
+data.plot(navigator='spectrum')
+data.tranpose
+data.plot(navigator='spectrum')
+data.t
+data.plot(navigator='spectrum')
+data.T
+data.plot(navigator='spectrum')
+data.T
+data.plot(navigator='spectrum')
+data.spikes_removal_tool()
+data.plot()
+with output:
+    data.plot()
