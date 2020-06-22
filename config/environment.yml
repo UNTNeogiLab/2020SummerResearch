@@ -1,0 +1,21 @@
+name: python
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab
+  - jupyter
+  - hyperspy
+  - pandas
+  - numpy
+  - matplotlib
+  - nodejs
+  - pip
+  - ipympl
+  - ipykernel
+  - ipywidgets
+  - pip:
+      - renishawWiRE
+      - PyQt5
+prefix: C:\Users\aa1625\Anaconda3\envs\python
+

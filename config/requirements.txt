@@ -1,0 +1,11 @@
+pandas
+matplotlib
+hyperspy
+numpy
+juypter
+juypter-lab
+hyperspyui
+qt
+ipywidgets
+nodejs
+ipympl
