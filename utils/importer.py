@@ -8,7 +8,7 @@ import os
 
 
 def read(filename):
-    loadables = pd.read_csv("import_config.csv")
+    loadables = pd.read_csv("config/import_config.csv")
     extension = filename.split('.', 1)[1]
     if (extension == "jpg"):
         im = Image.open(filename)
