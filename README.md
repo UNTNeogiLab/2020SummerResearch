@@ -1,5 +1,7 @@
 # 2020SummerResearch 
-Requires anaconda and python  
+## Method 1 (requires python and anaconda, reccomeneded)  
+`python setup.py`
+## Method 2 (Requires anaconda and python)  
 **Installation of Required Materials**  
 `conda env create -f config/environment.yml` if no environment exists already  
 `conda env update --prefix ./env --file config/environment.yml  --prune` to update an existing environment  
@@ -10,7 +12,7 @@ Requires anaconda and python
 `jupyter lab`  
 run all the code cells to get a GUI
 
-##Using Pip
+##Method 3 (requires python)
 While pip will probably not work and you will regret it, here is how to use pip  
 `pip install config/requirements.txt`  
 `jupyter nbextension enable --py widgetsnbextension`  

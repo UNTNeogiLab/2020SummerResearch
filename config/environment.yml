@@ -13,6 +13,7 @@ dependencies:
   - pip
   - ipympl
   - ipykernel
+  - voila
   - ipywidgets
   - pip:
       - renishawWiRE

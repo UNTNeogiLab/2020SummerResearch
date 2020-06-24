@@ -33,6 +33,8 @@ def read(filename):
     if (extension == "wdf"):
         reader = WDFReader(filename)
         #reader.print_info()
-        return hs.signals.Signal1D(reader.spectra)
+        data = hs.signals.Signal1D(reader.spectra)
+        data.metadata.General.title = reader.title
+        return data
     else:
         print("INVALID FILE TYPE")
