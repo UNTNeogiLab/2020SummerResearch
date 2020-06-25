@@ -13,3 +13,4 @@ voila
 ipykernel
 renishawWiRE
 PyQt5
+appmode
