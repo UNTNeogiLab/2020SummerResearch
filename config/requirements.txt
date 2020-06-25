@@ -9,6 +9,8 @@ qt
 ipywidgets
 nodejs
 ipympl
+voila
 ipykernel
 renishawWiRE
 PyQt5
+appmode

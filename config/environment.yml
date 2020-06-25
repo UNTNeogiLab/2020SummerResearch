@@ -9,10 +9,12 @@ dependencies:
   - pandas
   - numpy
   - matplotlib
+  - appmode
   - nodejs
   - pip
   - ipympl
   - ipykernel
+  - voila
   - ipywidgets
   - pip:
       - renishawWiRE
