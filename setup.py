@@ -17,8 +17,9 @@ def install ():
         os.system('conda env update --prefix ./env --file config/environment.yml  --prune')
     print("Configuring Jupyter:")
     os.system('jupyter lab workspaces import config/lab.json')
+    os.system('jupyter labextension install @pyviz/jupyterlab_pyviz')
     os.system('jupyter labextension install @jupyter-widgets/jupyterlab-manager')
 def run():
-    os.system('jupyter lab')
+    os.system('python new.py')
 install()
 run()

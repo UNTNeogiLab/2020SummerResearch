@@ -2,6 +2,7 @@ name: python
 channels:
   - conda-forge
   - defaults
+  - pyviz
 dependencies:
   - jupyterlab
   - jupyter
@@ -13,8 +14,15 @@ dependencies:
   - pip
   - ipympl
   - ipykernel
-  - voila
   - ipywidgets
+  - panel
+  - bokeh
+  - xarray
+  - hvplot
+  - bokeh
+  - dask
+  - netCDF4
+  - bottleneck
   - pip:
       - renishawWiRE
       - PyQt5
