@@ -21,6 +21,8 @@ dependencies:
   - hvplot
   - bokeh
   - dask
+  - datashader
+  - colorcet
   - netCDF4
   - bottleneck
   - pip:

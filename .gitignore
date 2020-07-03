@@ -187,3 +187,5 @@ config/requirements.txt
 !/data/Sample3_PL_tri.txt
 !/data/Sample2_PL_bilayer.txt
 hyperspy_log.py
+/converted/BigData.3nc
+/data/BigData.wdf

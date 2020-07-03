@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aa9910e7-8225-4265-8f64-dc03511b46c5" name="talon3.hpc.unt.edu" url="http:// talon3.hpc.unt.edu">
+        <fileTransfer rootFolder="/storage/scratch2/share/pi_an0047" accessType="SFTP" host="talon3.hpc.unt.edu" port="22" sshConfigId="0940a131-a29b-4528-8622-44a253e4be0d" sshConfig="bms0248@talon3.hpc.unt.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

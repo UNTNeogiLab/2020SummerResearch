@@ -3,6 +3,7 @@ from utils.importer import *
 from utils.func import *
 import matplotlib.pyplot as plt
 import hyperspy.api as hs
+from panel.interact import interact, interactive, fixed, interact_manual
 import panel as pn
 import xarray as xr
 import pandas as pd
@@ -19,17 +20,50 @@ plt.max_open_warning = False
 hs.preferences.save()
 #hs.preferences.gui()
 print("Imported Packages")
-reader = WDFReader('data/Sample1_map_data.wdf')
-reader.spectra = np.flip(reader.spectra,axis=2)
-w = range(0,reader.spectra.shape[2])
-x = range(0,reader.spectra.shape[0])
-y = range(0,reader.spectra.shape[1])
-data = xr.DataArray(reader.spectra,dims = ('x','y',"wavelength"), name = (reader.title),coords = {'x': x,'y': y,'wavelength': w})
-ds= data.to_dataset()
-ds.to_netcdf('data/NewData2.nc')
-def plot(wavelength):
-    return hv.HeatMap(ds.isel(wavelength=wavelength))
-dmap = hv.DynamicMap(plot, kdims = ['wavelength'])
-dmap.select(wavelength = 514)
-hv_layout = pn.panel(dmap.redim.values(wavelength=range(1, 1022)))
-server = hv_layout.show()
+#ds = xr.open_dataset('data/BigData.nc')
+def plot(filename, wavelength = 1,Orientation=1,Polarization =1 ):
+    extension = filename.split('.')[1]
+    if(extension == "3nc"):
+
+        ds = xr.open_dataset(filename, chunks = {'wavelength':wavelength})
+        def plot2(wavelength):
+            return hv.HeatMap(ds.isel(wavelength=wavelength))
+        dmap = hv.DynamicMap(plot2, kdims = ['wavelength'])
+        dmap.select(wavelength = 514)
+        return pn.panel(dmap.redim.values(wavelength=range(1, 1022)))
+    elif(extension == "5nc"):
+        ds = xr.open_dataset(filename, chunks = {'wavelength':wavelength,'Orientation':Orientation,'Polarization':Polarization})
+        def plot(wavelength, Orientation,Polarization):
+            return hv.HeatMap(hv.HeatMap(ds.isel(wavelength=wavelength,Orientation = Orientation,Polarization= Polarization)))
+        dmap = hv.DynamicMap(plot, kdims = ['wavelength','Orientation','Polarization'])
+        return pn.panel(dmap.redim.values(wavelength=range(0, 5),Orientation = range(0,2),Polarization=range(0,180)))
+    else:
+        return "<br>\n#INVALID FILE TYPE"
+
+def plot2(filename, wavelength, orientation=1, polarization=100):
+    return plot("converted/" + filename, wavelength, orientation, polarization)
+
+
+def generateplot(filename):
+    extension = filename.split('.')[1]
+    h2 = pn.pane.Markdown('''## Choose chunk size
+    ''')
+    h3 = pn.pane.Markdown('''
+    ## Plot
+    ''')
+    if (extension == "3nc"):
+        layout = pn.interact(plot2, filename=fixed(filename), wavelength=(1, 200), orientation=fixed(2),
+                             polarization=fixed(200))
+    if (extension == "5nc"):
+        layout = pn.interact(plot2, filename=fixed(filename), wavelength=(1, 5), orientation=(1, 2),
+                             polarization=(1, 200))
+    return pn.Row(pn.Column(h2, layout[0]), pn.Column(h3, layout[1]))
+
+
+h1 = pn.pane.Markdown('''
+#Multidimensional spectral data visualizer
+##Choose a file below
+''')
+layout = pn.interact(generateplot, filename=(os.listdir('converted')))
+GUI = pn.Row(pn.Column(h1, layout[0]), layout[1])
+GUI.show()

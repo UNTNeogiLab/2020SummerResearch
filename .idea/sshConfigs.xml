@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="talon3.hpc.unt.edu" id="0940a131-a29b-4528-8622-44a253e4be0d" port="22" nameFormat="DESCRIPTIVE" username="bms0248" />
+    </configs>
+  </component>
+</project>
