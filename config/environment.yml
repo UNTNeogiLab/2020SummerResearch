@@ -25,6 +25,7 @@ dependencies:
   - colorcet
   - netCDF4
   - bottleneck
+  - plotly
   - pip:
       - renishawWiRE
       - PyQt5
