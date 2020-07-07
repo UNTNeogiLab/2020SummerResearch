@@ -1,6 +1,6 @@
 import os
 
-def install ():
+def install():
     if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
         print("Activating environment")
         os.system('conda activate python')
