@@ -19,26 +19,26 @@ print("Imported Packages")
 def plot(filename, wavelength = 1):
     extension = filename.split('.')[1]
     if(extension == "3nc"):
-        ds = xr.open_dataset(filename, chunks = {'wavelength':wavelength})
-        def plot2(wavelength):
-            return hv.HeatMap(ds.isel(wavelength=wavelength)).opts(cmap = 'Reds',width = 900,colorbar = True)
-        dmap = hv.DynamicMap(plot2, kdims = ['wavelength'])
-        return pn.panel(dmap.redim.values(wavelength=ds.coords['wavelength'].values))
+        with xr.open_dataset(filename, chunks = {'wavelength':wavelength}) as ds:
+            def plot2(wavelength):
+                return hv.HeatMap(ds.isel(wavelength=wavelength)).opts(cmap = 'Reds',width = 900,colorbar = True)
+            dmap = hv.DynamicMap(plot2, kdims = ['wavelength'])
+            return pn.panel(dmap.redim.values(wavelength=ds.coords['wavelength'].values))
     elif(extension == "5nc"):
-        ds = xr.open_dataset(filename, chunks = {'Orientation':1})
-        def plot(Orientation,Wavelength):
-            polys = hv.Polygons([]).opts(fill_alpha=0.2, line_color='white')
-            box_stream = hv.streams.BoxEdit(source=polys,num_objects = 1)
-            def plot3(data, Orientation=Orientation):
-                if not data or not any(len(d) for d in data.values()):
-                    output = np.log(ds.isel(Orientation=Orientation).mean(dim = ['x','y']))
-                    return hv.Image(output).opts(cmap = 'Blues',invert_axes = True,width = 900,colorbar = True,title=(f" Orientation: {Orientation}"))
-                output = np.log(ds.isel(Orientation=Orientation,x=range(round(data['x0'][0]),round(data['x1'][0])),y = range(round(data['y0'][0]),round(data['y1'][0]))).mean(dim = ['x','y']))
-                return hv.Image(output).opts(cmap = 'Reds',invert_axes = True,width = 900,colorbar = True,title=(f"Orientation: {Orientation}"))
-            def plot2(Orientation, wavelength):
-                return hv.HeatMap(ds.isel(Orientation=Orientation,wavelength = wavelength).mean(dim = 'Polarization')).opts(colorbar = True,title=(f"Wavelength: {wavelength}, Orientation: {Orientation}"))
-            dmap = hv.DynamicMap(plot3, streams=[box_stream])
-            return plot2(Orientation,Wavelength)*polys + dmap
+        with xr.open_dataset(filename, chunks = {'Orientation':1}) as ds:
+            def plot(Orientation,Wavelength):
+                polys = hv.Polygons([]).opts(fill_alpha=0.2, line_color='white')
+                box_stream = hv.streams.BoxEdit(source=polys,num_objects = 1)
+                def plot3(data, Orientation=Orientation):
+                    if not data or not any(len(d) for d in data.values()):
+                        output = np.log(ds.isel(Orientation=Orientation).mean(dim = ['x','y']))
+                        return hv.Image(output).opts(cmap = 'Blues',invert_axes = True,width = 900,colorbar = True,title=(f" Orientation: {Orientation}"))
+                    output = np.log(ds.isel(Orientation=Orientation,x=range(round(data['x0'][0]),round(data['x1'][0])),y = range(round(data['y0'][0]),round(data['y1'][0]))).mean(dim = ['x','y']))
+                    return hv.Image(output).opts(cmap = 'Reds',invert_axes = True,width = 900,colorbar = True,title=(f"Orientation: {Orientation}"))
+                def plot2(Orientation, wavelength):
+                    return hv.HeatMap(ds.isel(Orientation=Orientation,wavelength = wavelength).mean(dim = 'Polarization')).opts(colorbar = True,title=(f"Wavelength: {wavelength}, Orientation: {Orientation}"))
+                dmap = hv.DynamicMap(plot3, streams=[box_stream])
+                return plot2(Orientation,Wavelength)*polys + dmap
         layout = pn.interact(plot, Orientation = ds.coords['Orientation'].values,Wavelength = ds.coords['wavelength'].values)
         return pn.Row(layout[0],layout[1])
     else:
