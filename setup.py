@@ -1,6 +1,6 @@
 import os
 
-def install():
+def install(Jupyter = True):
     if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
         print("Activating environment")
         os.system('conda activate python')
@@ -11,14 +11,15 @@ def install():
             os.system('conda activate python')
         else:
             print("environment exists")
-            os.system('conda env update --prefix ./env --file config/environment.yml  --prune')
+            os.system('conda env update --name python --file config/environment.yml')
     else:
         print("Updating environment")
-        os.system('conda env update --prefix ./env --file config/environment.yml  --prune')
-    print("Configuring Jupyter:")
-    os.system('jupyter lab workspaces import config/lab.json')
-    os.system('jupyter labextension install @pyviz/jupyterlab_pyviz')
-    os.system('jupyter labextension install @jupyter-widgets/jupyterlab-manager')
+        os.system('conda env update --name python --file config/environment.yml')
+    if(Jupyter):
+        print("Configuring Jupyter:")
+        os.system('jupyter lab workspaces import config/lab.json')
+        os.system('jupyter labextension install @pyviz/jupyterlab_pyviz')
+        os.system('jupyter labextension install @jupyter-widgets/jupyterlab-manager')
 def run():
     os.system('panel serve new.py')
 install()
