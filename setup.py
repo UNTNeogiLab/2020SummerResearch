@@ -20,6 +20,6 @@ def install():
     os.system('jupyter labextension install @pyviz/jupyterlab_pyviz')
     os.system('jupyter labextension install @jupyter-widgets/jupyterlab-manager')
 def run():
-    os.system('python new.py')
+    os.system('panel serve new.py')
 install()
 run()

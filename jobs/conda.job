@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -J conda install
+#SBATCH -o conda.o%j
+#SBATCH -e Job.e%j
+#SBATCH -p public
+#SBATCH --qos general
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 1:00:00
+#SBATCH -C r420
+
+
+
+### Loading modules
+
+module load intel/compilers/18.0.1
+
+
+
+conda install -f /storage/scratch2/share/pi_an0047/aryan/config/environment.yml

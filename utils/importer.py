@@ -8,21 +8,30 @@ from renishawWiRE import WDFReader
 import os
 
 
-def read(filename):
+def read(filename, output = ""):
     # loadables = pd.read_csv("config/import_config.csv")
+
     name = filename.split('.', 1)[0]
     extension = filename.split('.', 1)[1]
+    if output == "":
+        output = name
     if (extension == "hspy"):
         data = hs.load(filename)
-        Dims = ["x", "y", "wavelength","Orientation", "Polarization"]
+        order = []
+        shape = list(data.data.shape)
+        for i in range (0,5):
+            index = shape.index(data.axes_manager[i].size)
+            order.append(index)
+            shape[index] = 0
+        udims = ["Orientation", "wavelength", "x", "y", "Polarization"]
+        Dims = [udims[order[i]] for i in range(0,5)]
         coords = {}
         attrs = {}
         for i, dimension in enumerate(Dims):
             coords[dimension] = range(0,data.axes_manager[i].size)
             attrs[dimension] = data.axes_manager[i].units
-        data = xr.DataArray(data, dims=("Orientation", "wavelength", "x", "y", "Polarization"), coords=coords,
-                            name="truncated_data", attrs = attrs)
-        data.to_netcdf(name + ".5nc")
+        data = xr.DataArray(data, dims=udims, coords=coords,name="5data", attrs = attrs)
+        data.to_netcdf(output + ".5nc")
     elif (extension == "wdf"):
         reader = WDFReader(filename)
         reader.spectra = np.flip(reader.spectra, axis=2)
@@ -32,7 +41,7 @@ def read(filename):
         y = range(0,reader.spectra.shape[1])
         data = xr.DataArray(reader.spectra,dims = ('x','y',"wavelength"), name = (reader.title),coords = {'x': x,'y': y,'wavelength': w},attrs = attrs)
         ds = data.to_dataset()
-        ds.to_netcdf(name + ".3nc")
+        ds.to_netcdf(output + ".3nc")
     else:
         print(filename+": "+extension)
         print("INVALID FILE TYPE")
