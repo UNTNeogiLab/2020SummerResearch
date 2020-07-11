@@ -155,3 +155,5 @@ hyperspy_log.py
 tests
 /.idea/
 /jobs
+.vscode/*
+*.code-workspace
