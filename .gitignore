@@ -157,3 +157,6 @@ tests
 /jobs
 .vscode/*
 *.code-workspace
+.run/
+converted/20mW_Wavelength.5nc
+test.py
