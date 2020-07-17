@@ -1,22 +1,42 @@
 import os
 import argparse
 
-
-def install(Jupyter=True):
-    if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
-        print("Activating environment")
-        os.system('conda activate python')
+def install(Jupyter=True, Mamba = False):
+    if(Mamba):
+        os.system('conda install mamba -c conda-forge')
         if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
-            print("Failed: Environment doesn't exist")
-            print("Creating environment: this will take a while")
-            os.system('conda env create -f config/environment.yml')
+            print("Activating environment")
             os.system('conda activate python')
+            if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
+                print("Failed: Environment doesn't exist")
+                print("Creating environment: this will take a while")
+                os.chdir("config")
+                os.system('mamba env create')
+                os.system('conda activate python')
+            else:
+                print("environment exists")
+                os.chdir("config")
+                os.system('mamba env update')
         else:
-            print("environment exists")
-            os.system('conda env update --name python --file config/environment.yml')
+            print("Updating environment")
+            os.chdir("config")
+            os.system('mamba env update')
+        os.chdir("..")
     else:
-        print("Updating environment")
-        os.system('conda env update --name python --file config/environment.yml')
+        if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
+            print("Activating environment")
+            os.system('conda activate python')
+            if (os.environ['CONDA_DEFAULT_ENV'] != "python"):
+                print("Failed: Environment doesn't exist")
+                print("Creating environment: this will take a while")
+                os.system('conda env create -f config/environment.yml')
+                os.system('conda activate python')
+            else:
+                print("environment exists")
+                os.system('conda env update --name python --file config/environment.yml')
+        else:
+            print("Updating environment")
+            os.system('conda env update --name python --file config/environment.yml')
     if (Jupyter):
         print("Configuring Jupyter:")
         os.system('jupyter lab workspaces import config/lab.json')
@@ -28,26 +48,38 @@ def run_bokeh(ip='',port=5006):
     os.system('panel serve holoviz.ipynb')
 def run_jupyter():
     os.system('jupyter lab')
-def update():
-    os.system('conda env update --name python --file config/environment.yml')
+def update(Mamba = False):
+    if(Mamba):
+        os.chdir("config")
+        os.system('mamba env update')
+    else:
+        os.system('conda env update --name python --file config/environment.yml')
 
-parser = argparse.ArgumentParser(prog='setup',description='Install and Run python. Only one arguments execute in the following order')
-parser.add_argument('--R', dest='R', help='Builds and Runs Bokeh Server (Doesn\'t install Jupyter components)',action='store_const',const=True, default= False)
-parser.add_argument('--J', dest='J', help='Builds and runs Jupter Server',action='store_const',const=True, default= False)
-parser.add_argument('--B', dest='B', help='Installs or Upgrades environment w/ Jupyter components',action='store_const',const=True, default= False)
-parser.add_argument('--U', dest='U', help='Updates environment(NOT RECCOMENDED)',action='store_const',const=True, default= False)
+parser = argparse.ArgumentParser(prog='setup',description='Install and Run python. Only one argument executes in the following order. No arguments will default to running a panel server')
+parser.add_argument('--R', dest='R', help='Builds and Runs Bokeh Server using mamba (Doesn\'t install Jupyter components)',action='store_const',const=True, default= False)
+parser.add_argument('--J', dest='J', help='Builds and runs Jupter Server using mamba',action='store_const',const=True, default= False)
+parser.add_argument('--B', dest='B', help='Installs or Upgrades environment w/ Jupyter components using conda',action='store_const',const=True, default= False)
+parser.add_argument('--U', dest='U', help='Updates environment using conda(NOT RECCOMENDED)',action='store_const',const=True, default= False)
+parser.add_argument('--M', dest='M', help='Installs or Upgrades environment w/ Jupyter components using mamba',action='store_const',const=True, default= False)
+parser.add_argument('--MU', dest='MU', help='Updates environment using mamba(NOT RECCOMENDED)',action='store_const',const=True, default= False)
 args = parser.parse_args()
 if args.R:
-    install(False)
+    install(Jupyter=False,Mamba =True)
     run_bokeh()
 elif args.J:
-    install()
+    install(Mamba =True)
     run_jupyter()
 elif args.B:
     install()
 elif args.U:
-    update()
+    update(Mamba =False)
+elif args.M:
+    print("Using Mamba")
+    install(Mamba =True)
+elif args.MU:
+    print("Using Mamba")
+    update(Mamba=True)
 else:
     print("No arguments given, defaulting to launching panel server")
-    install()
+    install(Mamba=True, Jupyter= True)
     run_bokeh()

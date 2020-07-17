@@ -31,7 +31,7 @@ def read(filename, output = ""):
             coords[dimension] = range(0,data.axes_manager[i].size)
             attrs[dimension] = data.axes_manager[i].units
         data = xr.DataArray(data, dims=udims, coords=coords,name="5data", attrs = attrs)
-        data.to_netcdf(output + ".5nc")
+        data.to_netcdf(output + ".5nc", engine="h5netcdf")
     elif (extension == "wdf"):
         reader = WDFReader(filename)
         reader.spectra = np.flip(reader.spectra, axis=2)

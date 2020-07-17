@@ -6,6 +6,7 @@ channels:
 dependencies:
   - jupyterlab
   - jupyter
+  - mamba
   - hyperspy
   - pandas
   - numpy
@@ -15,6 +16,7 @@ dependencies:
   - ipympl
   - ipykernel
   - ipywidgets
+  - h5netcdf
   - panel
   - bokeh
   - xarray
@@ -26,8 +28,11 @@ dependencies:
   - netCDF4
   - bottleneck
   - plotly
+  - elm
   - pip:
       - renishawWiRE
       - PyQt5
+      - sklearn_xarray
+      - sklearn-xarray
 prefix: C:\Users\aa1625\Anaconda3\envs\python
 
