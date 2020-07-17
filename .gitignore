@@ -139,17 +139,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
-.idea/.gitignore
-.idea/inspectionProfiles/
-.idea/misc.xml
-.idea/modules.xml
-.idea/research.iml
-.idea/workspace.xml
-!/main.py
-!/data
-!/config/requirements.txt
-!/research/
 hyperspy_log.py
 .idea
 tests
@@ -160,3 +149,10 @@ tests
 .run/
 converted/20mW_Wavelength.5nc
 test.py
+converted/cropped.5nc
+Untitled.ipynb
+data/cropped.hspy
+ml.py
+data/
+converted/
+OldData/

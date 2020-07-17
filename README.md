@@ -9,7 +9,7 @@ Export jupyter lab files
   
 ###UNT servers  
 `panel serve holoviz.ipynb --address 0.0.0.0` on compute node   
-`ssh -L 5006:cX-X-X:5006 aa1625@vis-01.acs.unt.edu` on local   
+`ssh -L 5006:cX-X-X:5006 EUID@vis-01.acs.unt.edu` on local   
 then open it on browser
 ###Generally)  
 `panel serve holoviz.ipynb --address 0.0.0.0` on server  
