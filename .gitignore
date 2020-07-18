@@ -148,7 +148,7 @@ tests
 *.code-workspace
 .run/
 converted/20mW_Wavelength.5nc
-test.py
+cython scratches/test.pyx
 converted/cropped.5nc
 Untitled.ipynb
 data/cropped.hspy
@@ -156,3 +156,4 @@ ml.py
 data/
 converted/
 OldData/
+/cython scratches/
