@@ -27,6 +27,7 @@ dependencies:
   - netCDF4
   - bottleneck
   - plotly
+  - jupyter_bokeh
   - elm
   - pip:
       - renishawWiRE

@@ -41,6 +41,7 @@ def install(Jupyter=True, Mamba = False):
         print("Configuring Jupyter:")
         os.system('jupyter lab workspaces import config/lab.json')
         os.system('jupyter labextension install @pyviz/jupyterlab_pyviz')
+        os.system('jupyter labextension install @bokeh/jupyter_bokeh')
         os.system('jupyter labextension install @jupyter-widgets/jupyterlab-manager')
 
 
