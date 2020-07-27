@@ -8,3 +8,4 @@ for file in files:
     read(filename,output)
     print("converted: "+filename+ " to " +output +".5nc")
 
+# TODO UPGRADE

@@ -1,6 +1,6 @@
-from sys import executable, argv
+'''from sys import executable, argv
 from subprocess import check_output
-from PyQt5.QtWidgets import QFileDialog, QApplication
+from PyQt5.QtWidgets import QFileDialog, QApplicat
 import os
 def gui_fname(directory='./'):
     """Open a file dialog, starting in the given directory, and return
@@ -17,3 +17,12 @@ if __name__ == "__main__":
     print(fname[0])
 def getflies():
     return os.listdir("data")
+'''
+#APPARENTLY I GOT TO WRITE MY OWN FUNCTIONS NOW
+import numpy as np
+def Max(data):
+    return np.atleast_1d(np.max(data).values)[0]
+def Min(data):
+    return np.atleast_1d(np.min(data).values)[0]
+def colormap(data):
+    return range(round(Max(data)),round(Min(data)))

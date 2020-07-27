@@ -10,11 +10,14 @@ dependencies:
   - pandas
   - numpy
   - matplotlib
+  - dask-jobqueue
   - nodejs
   - pip
   - ipympl
   - ipykernel
   - ipywidgets
+  - dask-labextension
+  - mpi4py
   - h5netcdf
   - panel
   - bokeh
