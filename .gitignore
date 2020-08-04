@@ -158,3 +158,5 @@ converted/
 OldData/
 /cython scratches/
 /jobs/
+/ssh.py
+/venv2/

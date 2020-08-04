@@ -13,6 +13,11 @@ dependencies:
   - dask-jobqueue
   - nodejs
   - pip
+  - selenium
+  - geckodriver
+  - firefox
+  - numba
+  - lmfit
   - ipympl
   - ipykernel
   - ipywidgets
